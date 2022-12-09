@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	color: white;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	min-height: 50px;
+	height: auto;
+	width: 100%;
+}
+
+header img {
+	max-width: 50px;
+	max-height: 30px;
+}
+
+
+.content {
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+main {
+	display: block;
+	justify-content: center;
+	color: #343333;
+	height: auto;
+}
+
+.center__text {
+	width: 50%;
+	margin-left: 25%;
+	align-items: center;
+}
+
+.main__txt {
+	font-size: 20px;
+	font-family: 'DM Serif Display';
+}
+
+.center__text {
+	margin-top: 7vh;
+	margin-bottom: 3vh;
+
+}
+
+
+.background__line {
+	background-color: rgb(248, 184, 64);
+	height: 20vh;
+	position: absolute;
+	color: rgb(248, 184, 64);
+	width: 100%;
+}
+
+.blocks {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+.block {
+	width: 300px;
+	height: 400px;
+	background-color: white;
+	margin: 0 40px;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.block img {
+	margin-top: 30px;
+	width: 150px;
+	height: 150px;
+}
+
+.title {
+	font-family: 'DM Serif Display';
+	color: #066ec9;
+}
+
+.block__txt {
+	font-family: 'DM Serif Display';
+}
+
+.btn {
+	background-color: #f5a442;
+	color: white;
+	font-family: DM Serif Display;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 30px;
+	margin-top: 50px;
+	border-radius: 9px;
+	letter-spacing: 2px;
+}
+
+.btn:hover {
+	background-color: #066ec9;
+	transition: 1s
+}
+
+.line {
+	height: 50%;
+	background-color: #f5a442;
+}
+
+body {
+	background-image: url("../images/img_1.png");
+	background-repeat: no-repeat;
+	background-size: 100% 150px;
+	background-position-y: 420px;
+	background-color: #e2e5fc;
+	margin: 0;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #343333;
+	color: white;
+	height: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.center__text {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.blocks {
+		display: block;
+	}
+
+	.block {
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.center__text {
+		width: 90%;
+	}
+
+	footer p {
+		width: 60%;
+	}
+
+}
+
+
+
+@font-face {
+	font-family: "DM Serif Display";
+	src: url("/fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
