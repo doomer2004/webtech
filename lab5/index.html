@@ -9,14 +9,14 @@
 
 <body>
 
-	<div class="block__1">
+	<div id="block__1">
 		<h1 class="name">CoffeRecords</h1>
 		<p class="name__1">mon-thur 9:00 - 20:00
 			fri-sun 9:00-21:00</p>
 
 	</div>
 	<div class="block__2-3-4-5-6">
-		<div class="block__2">
+		<div id="block__2">
 			<ul class="list__links">
 				<li class="list__link">
 					<a href="index.html">Assortment</a>
@@ -37,37 +37,30 @@
 
 		</div>
 		<div class="block__3-4-5-6">
-			<div class="block__3">
+			<div id="block__3">
 				<p>BREAKFAST ALL DAY</p>
 
 			</div>
 			<div class="block__4-5-6">
 				<div class="block__4-6">
-					<div class="block__4">
-						<label for="swap-input">
-							Swap number
-							<input type="number" name="swap-input">
-							<button>swap-input</button>
-						</label>
-
-						<label for="swap-input">
-							Change color
-							<input type="text" name="swap-input">
-							<button>change border color</button>
-						</label>
-
-						<label for="swap-input">
-							<button>Calculate square triangle</button>
-						</label>
+					<div id="block__4">
+						<div style="width: 100%; height: 10%;">
+							<input type="text" id="toRevert" width=10% height="10px">
+							<input type="button" onclick="revertNums(document.getElementById('toRevert').value)" value="Swap">
+							<input type="text" id="color" width=20% height="10px" maxlength="6">
+							<input type="button" onclick="setBorderColor(document.getElementById('color').value)"
+								value="Change border color">
+							<input style="margin: 10px" type="button" onclick="getRectangleSize(5)" value="Get Rectangle Size">
+						</div>
 
 					</div>
-					<div class="block__6">
+					<div id="block__6">
 						<p>in love with specialty coffee, pastry,
 							food & good music</p>
 
 					</div>
 				</div>
-				<div class="block__5">
+				<div id="block__5">
 
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.7193461159295!2d30.51321281499888!3d50.46495069420213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf9867558e6f%3A0x2f0d52971b10e11f!2sCoffee%20Records!5e0!3m2!1suk!2sua!4v1664919270006!5m2!1suk!2sua"
@@ -78,13 +71,33 @@
 
 		</div>
 	</div>
-	<div class="block__7">
+	<div id="block__7">
 		<p>Contact Number +3806666666</p>
 		<h1 class="name">Take it now</h1>
 
 	</div>
 </body>
 
-<script src="js/funcs.js"></script>
+<script src="js/funcs.js" ></script>
+    <script>
+    color = window.localStorage.getItem("borderColor")
+    setBorderColor(color)
+    if(document.cookie === "")document.cookie = "nums=";
+    var left = document.getElementById("block__2");
+    var right = document.getElementById("block__5");
+
+    content = left.innerHTML;
+    left.innerHTML = right.innerHTML;
+    right.innerHTML = content;
+    </script>
+    <script>
+        if (document.cookie !== "nums="){
+            result = confirm(document.cookie.substring(5))
+            if (result){
+                document.cookie = "nums=";
+                location.reload()
+            }
+        }
+    </script>
 
 </html>
