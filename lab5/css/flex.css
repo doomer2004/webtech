@@ -10,40 +10,30 @@ body {
 
 
 /*block*/
-#block__1 {
+.block__1 {
 	background-color: rgb(28, 41, 41);
 	min-height: 10vh;
 	width: 100%;
 	height: auto;
 	justify-content: space-between;
 	align-items: center;
-	border-style: solid;
-	border-color: black;
+
 }
 
-#block__2 {
+.block__2 {
 	width: 20%;
 	background-color: rgb(39, 57, 57);
-	justify-content: center;
-	align-items: center;
-	border-style: solid;
-	border-color: black;
 }
 
-#block__3 {
+.block__3 {
 	background-color: rgb(42, 62, 62);
 	justify-content: center;
-	border-style: solid;
-	border-color: black;
 }
 
-#block__4 {
+.block__4 {
 	background-color: rgb(50, 74, 74);
 	flex-grow: 2;
 	min-height: 350px;
-	border-style: solid;
-	border-color: black;
-	flex-direction: column;
 }
 
 .block__4 img {
@@ -51,12 +41,10 @@ body {
 	height: 100%;
 }
 
-#block__5 {
+.block__5 {
 	background-color: rgb(17, 24, 24);
 	width: 30%;
 	align-items: center;
-	border-style: solid;
-	border-color: black;
 }
 
 .block__5 iframe {
@@ -64,20 +52,16 @@ body {
 	height: 100%;
 }
 
-#block__6 {
+.block__6 {
 	background-color: rgb(0, 0, 0);
 	height: auto;
 	justify-content: center;
-	border-style: solid;
-	border-color: black;
 }
 
-#block__7 {
+.block__7 {
 	background-color: rgb(40, 58, 58);
 	min-height: 10vh;
 	justify-content: space-between;
-	border-style: solid;
-	border-color: black;
 }
 
 .block__3-4-5-6 {
